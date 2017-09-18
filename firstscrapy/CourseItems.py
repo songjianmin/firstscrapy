@@ -20,6 +20,12 @@ class CourseItem(scrapy.Item):
     #学习人数
     student = scrapy.Field()
 
+    #页码
+    page = scrapy.Field()
+
+    #图片url
+    image_path = scrapy.Field()
+
 if __name__ == '__main__':
     course = CourseItem()
     course['title'] = "语文"
